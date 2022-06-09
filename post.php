@@ -26,15 +26,17 @@
   
 <?php require 'footer.php' ?>
 
+<script src="env.js"></script>
 <script>
     const queryString = window.location.search;  
     const urlParams = new URLSearchParams(queryString);   
     console.log(urlParams.has('s'));
     var posts = document.getElementById('post');
     var postss = document.getElementById('posts');
-    var accesstoken =`EAACJlEdEjp0BACIsQX2bAov5ABJSSzuMM4ifxyq91QIpGQSlzjadbYLKhduBzyQ4jt9XiF62tjyc9SxgPluy9tWZAgjbEyP301mb5JcbUjq2UCIgcLRgFWaXfsxYa0gRppZCLXNdR023MdoGIeqiiI5u6OgJAdfI4Yt5xnfw744Gj8amfX` ;
     var pageids =  urlParams.get('s');
-    var pageid = `102673297783575`;
+
+    // var accesstoken =`EAACJlEdEjp0BADQy2kHJp6IH6ZCWJaB4g7ludRRjgh8tkOAvb9bdxaE4XJfngxDvdtEABy5eixlhQW4FWGuRN6k2gbZBoeGuFeEfiGGTeyTK49hVew2B2Do4QYJ6mQYuhcuVmJX0qZCYoP31eIMARQdZATRTeMXGwiibK5jlDtXVCKKB3UiC` ;
+    // var pageid = `102673297783575`;
     facebook();
     singlepost();
 </script>
