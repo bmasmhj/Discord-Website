@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container ">
+      <h1 class="first-four">4</h1>
+      <div class="cog-wheel1 ">
+          <div class="cog1 rotate">
+            <div class="top"></div>
+            <div class="down"></div>
+            <div class="left-top"></div>
+            <div class="left-down"></div>
+            <div class="right-top"></div>
+            <div class="right-down"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+      </div>
+
+      <div class="cog-wheel2 ">
+        <div class="cog2 rotate">
+            <div class="top"></div>
+            <div class="down"></div>
+            <div class="left-top"></div>
+            <div class="left-down"></div>
+            <div class="right-top"></div>
+            <div class="right-down"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+      </div>
+     <h1 class="second-four">4</h1>
+      <p id="wr" class="wrong-para">Page not found!</p>
+      <p class="wrong-paras">Hmm... It seems that you're lost. Let us help guide you back home.</p>
+      <p class="Goback">
+      <a href="../" class="btn">Send me Home</a>
+      </p>
+    </div>
+    <script type="text/javascript">
+
+      setInterval(() => {
+        console.log(5);
+        document.getElementById('wr').style.display = "none";
+        setTimeout(() => {
+          document.getElementById('wr').style.display = "block"; 
+        }, 1000);
+      }, 2000);
+
+    </script>
+  </body>
+</html>

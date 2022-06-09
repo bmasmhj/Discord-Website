@@ -1,0 +1,33 @@
+
+ErrorDocument 400 http://localhost/Sudo/Website/Error/400
+ErrorDocument 401 http://localhost/Sudo/Website/Error/401
+ErrorDocument 403 http://localhost/Sudo/Website/Error/403
+ErrorDocument 404 http://localhost/Sudo/Website/Error/404
+ErrorDocument 503 http://localhost/Sudo/Website/Error/503
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^Dashboard  dashboard.php [NC,L]
+RewriteRule ^Back  clean.php [NC,L]
+RewriteRule ^CustomCommand  cutmcmnd.php [NC,L]
+RewriteRule ^Commands  commands.php [NC,L]
+RewriteRule ^Moderator  moderator.php [NC,L]
+RewriteRule ^Chatbot  chatbot.php [NC,L]
+RewriteRule ^Welcome  welcomemsg.php [NC,L]
+
+
+
+
+
+
+
+RewriteRule ^400  400.html [NC,L]
+RewriteRule ^401  401.html [NC,L]
+RewriteRule ^403  403.html [NC,L]
+RewriteRule ^404  404.html [NC,L]
+RewriteRule ^503  503.html [NC,L]
